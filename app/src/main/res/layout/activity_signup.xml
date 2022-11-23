@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".SignupActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="-40dp"
+        app:cardBackgroundColor="@color/themeColor"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_nameTextFieldLayout"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="16dp"
+                android:foregroundGravity="center"
+                android:hint="@string/name"
+                android:textColorHint="@color/black"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/signup_phoneNumberTextFieldLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:prefixTextAppearance="@style/TextAppearance.AppCompat.Display1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_round_corner_background"
+                    android:fontFamily="@font/glegoo"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    tools:ignore="TextContrastCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_phoneNumberTextFieldLayout"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="16dp"
+                android:foregroundGravity="center"
+                android:hint="@string/phone_number"
+                android:textColorHint="@color/black"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/signup_emailTextFieldLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:prefixTextAppearance="@style/TextAppearance.AppCompat.Display1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_phoneNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_round_corner_background"
+                    android:fontFamily="@font/glegoo"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:textColor="#000000"
+                    tools:ignore="TextContrastCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_emailTextFieldLayout"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="32dp"
+                android:foregroundGravity="center"
+                android:hint="@string/email"
+                android:textColorHint="@color/black"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/genderSelectionLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_round_corner_background"
+                    android:fontFamily="@font/glegoo"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000"
+                    tools:ignore="TextContrastCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/signup_continueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/white_round_corner_background"
+                android:paddingLeft="32dp"
+                android:paddingTop="16dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="16dp"
+                android:text="Continue"
+                android:textColor="#536D9D"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/signup_emailTextFieldLayout"
+                app:layout_constraintStart_toStartOf="@+id/signup_emailTextFieldLayout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_yearTextFieldLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="32dp"
+                android:foregroundGravity="center"
+                android:hint="@string/year"
+                android:textColorHint="@color/black"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintWidth_percent="0.35"
+                app:layout_constraintBottom_toTopOf="@+id/signup_continueButton"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signup_yearEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_round_corner_background"
+                    android:fontFamily="@font/glegoo"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    tools:ignore="TextContrastCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/genderSelectionLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/white_round_corner_background"
+                android:backgroundTint="#F7FFFFFF"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/signup_continueButton"
+                app:layout_constraintTop_toTopOf="@id/signup_yearTextFieldLayout"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/maleImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?actionBarItemBackground"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    app:srcCompat="@drawable/male_icon"
+                    tools:ignore="ContentDescription" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/listDivider"
+                    android:backgroundTint="#000000" />
+
+                <ImageView
+                    android:id="@+id/femaleImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="?actionBarItemBackground"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    app:srcCompat="@drawable/female_icon" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kaushan_script"
+        android:text="@string/app_name"
+        android:textColor="@color/themeColor"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/center"
+        android:layout_marginTop="-24dp"
+        android:fontFamily="@font/kaushan_script"
+        android:textColor="@color/themeColor"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

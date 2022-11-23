@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-syriana-dev-10930-authRole",
+      "UnauthRoleArn": "arn:aws:iam::944085213306:role/amplify-syriana-dev-10930-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::944085213306:role/amplify-syriana-dev-10930-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-syriana-dev-10930-deployment",
+      "UnauthRoleName": "amplify-syriana-dev-10930-unauthRole",
+      "StackName": "amplify-syriana-dev-10930",
+      "StackId": "arn:aws:cloudformation:us-east-1:944085213306:stack/amplify-syriana-dev-10930/47f07e50-1b8f-11ed-86a9-1204983a3e5b",
+      "AmplifyAppId": "dg0oonvnl967p"
+    },
+    "categories": {
+      "auth": {
+        "syriana35432a5b": {
+          "userPoolId": "us-east-1_XSqNSGWAJ",
+          "userPoolName": "Syriana-students",
+          "webClientId": "4e6lbovgt52p8rijp13c4hqatr",
+          "nativeClientId": "4e6lbovgt52p8rijp13c4hqatr",
+          "identityPoolId": "us-east-1:9a366fdc-7c62-4f61-a132-a3f245fef056",
+          "identityPoolName": "Syriana - Students Identity Pool",
+          "allowUnauthenticatedIdentities": false,
+          "authRoleArn": "arn:aws:iam::944085213306:role/Cognito_SyrianaStudentsIdentityPoolAuth_Role",
+          "authRoleName": "Cognito_SyrianaStudentsIdentityPoolAuth_Role",
+          "unauthRoleArn": "arn:aws:iam::944085213306:role/Cognito_SyrianaStudentsIdentityPoolUnauth_Role",
+          "unauthRoleName": "Cognito_SyrianaStudentsIdentityPoolUnauth_Role"
+        }
+      }
+    }
+  }
+}

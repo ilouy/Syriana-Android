@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "syriana35432a5b": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "authSelections": "identityPoolAndUserPool",
+  "resourceName": "syriana35432a5b",
+  "serviceType": "imported",
+  "region": "us-east-1",
+  "usernameAttributes": [
+    "phone_number"
+  ],
+  "requiredAttributes": [
+    "name",
+    "email",
+    "gender",
+    "phone_number"
+  ],
+  "passwordPolicyMinLength": 8,
+  "passwordPolicyCharacters": [
+    "Requires Lowercase",
+    "Requires Uppercase",
+    "Requires Numbers"
+  ],
+  "mfaConfiguration": "OFF",
+  "autoVerifiedAttributes": [
+    "phone_number"
+  ],
+  "mfaTypes": []
+}

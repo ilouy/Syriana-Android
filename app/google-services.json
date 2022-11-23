@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "628870011789",
+    "project_id": "syriana-e5cd1",
+    "storage_bucket": "syriana-e5cd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628870011789:android:9214b1d0f374cd9b857bc4",
+        "android_client_info": {
+          "package_name": "com.fadybasem.syriana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628870011789-f3uor109nkhdt2l51eudes0ekthu2ovm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7mYskbrJH0wIwOWWZr1Vh-HLGhHiBXkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628870011789-f3uor109nkhdt2l51eudes0ekthu2ovm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
